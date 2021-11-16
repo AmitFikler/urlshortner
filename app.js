@@ -5,7 +5,6 @@ const shortUrl = require('./routers/shortURL');
 const usersRouter = require('./routers/usersRouter');
 const app = express();
 const errorHandler = require('./middleware/errorHandler');
-const jwt = require('jsonwebtoken');
 
 app.use(cors());
 app.use(express.json());
