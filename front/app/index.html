@@ -12,27 +12,65 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-      <h1><i class="fas fa-wave-square"></i> shortylink</h1>
-    </nav>
-    <div id="form" class="continer">
-      <h3>Paste the URL to be shortened  <i class="fas fa-cut"></i></h3>
-      <input type="text" id="url-input" placeholder="Paste a link to start">
-      <button id="submit">Shorten URL</button>
-    </div>
-    <div id="output-continer" class="continer">
-      <h3>Your short URL is:</h3>
-      <a id="output-url" href="#" target="_blank"></a>
-      <button id="copyUrl">Copy</button>
-    </div>
-    <div id="statistic-continer" class="continer" style="margin-bottom: 20px;">
-      <h5>URL Statistics:</h5>
-      <label for="statistic-input">Enter URL:</label>
-      <input type="text" placeholder="Enter URL" id="statistic-input">
-      <button id="statisticBtn">Show Stats</button>
-      <div id="statistic-output">
+    <div id="website">
+      <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <h1><i class="fas fa-wave-square"></i> shortylink</h1>
+      </nav>
+      <div id="form" class="continer">
+        <h3>Paste the URL to be shortened  <i class="fas fa-cut"></i></h3>
+        <input type="text" id="url-input" placeholder="Paste a link to start">
+        <button id="submit">Shorten URL</button>
+      </div>
+      <div id="output-continer" class="continer">
+        <h3>Your short URL is:</h3>
+        <a id="output-url" href="#" target="_blank"></a>
+        <button id="copyUrl">Copy</button>
+      </div>
+      <div id="statistic-continer" class="continer" style="margin-bottom: 20px;">
+        <h5>URL Statistics:</h5>
+        <label for="statistic-input">Enter URL:</label>
+        <input type="text" placeholder="Enter URL" id="statistic-input">
+        <button id="statisticBtn">Show Stats</button>
+        <div id="statistic-output">
+        </div>
       </div>
     </div>
+      <div id="signup" class="form-sign-log">
+          <div class="">
+              <h1 access="false" id="control-8109454">Sign-up</h1></div>
+          <div class="formbuilder-text form-group field-signup-email">
+              <label for="signup-email" class="formbuilder-text-label">Email<span class="required">*</span></label>
+              <input type="email" placeholder="place enter your email" class="form-control" name="signup-email" access="false" id="signup-email" title="exemple@exemple.com" required="required" aria-required="true">
+          </div>
+          <div class="formbuilder-text form-group field-signup-username">
+            <label for="signup-username" class="formbuilder-text-label">Username<span class="required">*</span></label>
+            <input type="text" placeholder="place enter your username" class="form-control" name="signup-username" access="false" id="signup-username" required="required" aria-required="true">
+        </div>
+          <div class="formbuilder-text form-group field-signup-password">
+              <label for="signup-password" class="formbuilder-text-label">Password<span class="required">*</span></label>
+              <input type="password" placeholder="place enter your password" class="form-control" name="signup-password" access="false" id="signup-password" required="required" aria-required="true">
+          </div>
+          <div class="formbuilder-button form-group field-button-1636982333349">
+              <button id="signup-btn" type="button" class="btn-success btn" name="button-1636982333349" access="true" id="button-1636982333349">Sign-up</button>
+          </div>
+          <a id="account" href="#">if you already have account</a>
+    </div>
+    <div id="login" class="form-sign-log">
+      <div class="">
+          <h1 access="false" id="control-8109454">Login</h1></div>
+      <div class="formbuilder-text form-group field-login-email">
+          <label for="login-email" class="formbuilder-text-label">Email<span class="required">*</span></label>
+          <input type="email" placeholder="place enter your email" class="form-control" name="login-email" access="false" id="login-email" title="exemple@exemple.com" required="required" aria-required="true">
+      </div>
+      <div class="formbuilder-text form-group field-login-password">
+          <label for="login-password" class="formbuilder-text-label">Password<span class="required">*</span></label>
+          <input type="password" placeholder="place enter your password" class="form-control" name="login-password" access="false" id="login-password" required="required" aria-required="true">
+      </div>
+      <div class="formbuilder-button form-group field-button-1636982333349">
+          <button type="button" class="btn-success btn" name="button-1636982333349" access="true" id="login-btn">Login</button><br>
+          <a id="dont-have-account" href="#">Don't have an account yet?  Sign Up</a>
+      </div>
+  </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </body>
 </html>
