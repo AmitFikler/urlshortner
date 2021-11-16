@@ -31,14 +31,10 @@ exports.newUrl = (req, res, next) => {
         shortUrl: `http://localhost:3000/api/${urlCode}`,
         count: 0,
         date: new Date(),
-      })
-        .then(() => {
-          console.log('saved');
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-      res.send(`http://localhost:3000/api/${urlCode}`);
+      }).then(() => {
+        console.log('saved');
+        res.send(`http://localhost:3000/api/${urlCode}`);
+      });
     } else {
       res.send(check.shortUrl);
     }
